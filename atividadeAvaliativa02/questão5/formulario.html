@@ -1,0 +1,37 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Questão 05 - Formulário</title>
+</head>
+<body>
+<div id="geral">
+<form class="main" id="conte">
+    <label id="num1"> Numero 1:<input id="espa1" type="number" class="input"></label><br>
+    <label id="num2"> Numero 2:<input id="espa2" type="number" class="input"></label><br>
+    <label id="num3"> Numero 3:<input id="espa3" type="number" class="input"></label><br>
+    <button onclick="somarValores()" id="botao" type="button"> Calcular </button>
+</form>
+<p id="demo"></p>
+
+<script type="text/javascript">
+function somarValores(){
+		var s1 = document.getElementById("espa1").value;
+		espa1.value = ""
+		var s2 = document.getElementById("espa2").value;
+		espa2.value = ""
+		var s3 = document.getElementById("espa3").value;
+		espa3.value = ""
+        var s4 = parseInt(s1)+parseInt(s2)+parseInt(s3);
+		var i = s4;
+		if (i % 2 == 0) {
+			var resp = " -- O resultado é par"
+		}else{
+			var resp = " -- O Resultado é impar"
+		}
+		newpopupWindow = window.open ('', 'Resposta do calculo', "width=300 height=300");
+		newpopupWindow.document.write ("Resultado é " +s4+resp);
+    }
+</script>
+</div>
+</body>
+</html>

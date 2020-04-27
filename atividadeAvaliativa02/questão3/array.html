@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Questão 03 - Array</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> Arrays</h1>
+
+<p></p>
+
+<p id="demo"></p>
+
+<script>
+var marca, text, mLen, i;
+marca = ["VW", "AUDI", "MERCEDEZ", "RENAULT", "PEUGEOT", "BMW", "FIAT", "FERRARI", "BUGATTI", "FORD"];
+mLen = marca.length;
+
+text = "<ul>";
+for (i = 0; i < mLen; i++) {
+  text += "<li>" + marca[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

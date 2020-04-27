@@ -1,0 +1,24 @@
+td:hover, th:hover {
+    border: 3px solid black;
+    color: yellow;
+    background-color: black;
+  }
+  img{
+      height: 300px;
+      width: 450px;
+      margin: 5px;
+  }
+  h1{
+      text-align: center;
+  }
+  #customers{
+      text-align: center;
+  }
+  
+  body {
+      background-color: #6E6E6E;
+  }
+  label{
+      font-size: 24px;
+      font-family: Arial;
+  }

@@ -1,0 +1,30 @@
+
+#botao {
+	background-color: black;
+	color: white;
+	border: 5;
+	border-radius: 1em;
+	height: 10%;
+	width: 10%;
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+#mod, #result_fatorial{
+	font-size: 20px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#fatorial {
+	background-color:royalblue;
+	height: 5%;
+	margin: 5px;
+	font-size: 16px;
+}
+
+#mod {
+	background-color: yellow;
+}

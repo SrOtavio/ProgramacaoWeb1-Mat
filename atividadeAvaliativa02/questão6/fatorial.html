@@ -1,0 +1,50 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Questão 06 - Fatorial</title>
+<head>
+<body>
+
+<div>
+  <h1>Fatorial</h1>
+  <p for="digitar">Digite um número</p>
+  <br>
+  <input name="fatorial" id="fatorial" type="number" min="1" />
+  <button id="botao">calcular</button>
+  <br>
+  <br>
+  <span id="result_fatorial"></span>
+  <br>
+  <label id="mod" for="resultado"></label>
+  <br>
+</div>
+<script>
+  const message = document.querySelector("label");
+  const botao = document.querySelector("button");
+  const resultado = document.getElementById("result_fatorial");
+  const fatorial = document.getElementById("fatorial"); 
+  botao.onclick = function () {
+      gerarFatorial(parseInt(fatorial.value));
+  }
+  function gerarFatorial(num) {   
+    let msg = "";
+    let aux = 1;
+    for(let i = 1; i <= num; i++){
+      aux *= i;
+      if(aux == Infinity){
+        resultado.innerText = "";
+        message.innerHTML = "<span style=color:red;> Ultrapassou o limite suportado pelo navegador.<hr>Tente um número menor. </span>"
+        break;
+      }
+      if(i == num){
+        msg += i
+        message.innerText = "Fatorial  = " + aux;
+        resultado.innerText = msg;
+        break;
+      }
+      msg += i + " * " ;
+    }
+  }
+</script>
+</body>
+</html>

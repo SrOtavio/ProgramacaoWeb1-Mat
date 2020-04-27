@@ -1,0 +1,50 @@
+#botao {
+	background-color: black;
+	color: white;
+	border: 5;
+	border-radius: 1em;
+	height: 10%;
+	width: 10%;
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+#botao:hover {
+	color: yellow;
+	font-size: 25px;
+}
+
+#num1 {
+	color: red;
+	font-size: 24px;
+	font-family: Verdana;
+}
+#num2 {
+	color: blue;
+	font-size: 24px;
+	font-family: Verdana;
+}
+#num3 {
+	color: green;
+	font-size: 24px;
+	font-family: Verdana;
+}
+
+#espa1 {
+	background-color: #FF7F50;
+	height: 5%;
+	margin: 5px;
+	font-size: 16px;
+}
+#espa2 {
+	background-color: #87CEFA;
+	height: 5%;
+	margin: 5px;
+	font-size: 16px;
+}
+#espa3 {
+	background-color: #DDA0DD;
+	height: 5%;
+	margin: 5px;
+	font-size: 16px;
+}
