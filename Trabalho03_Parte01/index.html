@@ -1,0 +1,59 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="funcao.js"></script>
+</head>
+<style>
+	label, button, input, h2{
+		margin: 5px;
+		width: 200px;
+	}
+	div{
+		border: 1px solid black;
+		margin: 3px;
+		width: 210px;
+		float: auto;
+		background-color: lightblue;
+	}
+	h2{
+		text-align: center;
+	}
+
+</style>
+<body>
+	<div id="corpo">
+		<label><h2>Pesquisar Registros: </h2></label>
+		<button class="getall">GET ALL</button>
+	</div>
+		<p id="Result"></p>
+	<div>
+		<label><h2>Pesquisar ID: </h2></label>
+		<label>ID:</br><input id="idget" type="text" name="idget"></input></label></br>
+		<button type="button" class="get" value="GET">GET</button>
+	</div>
+	</br>
+	<div>
+		<label><h2>Criar Registro: </h2></label>
+		<label> Nome: </br><input id="nome" type="text" name="name"></input></label></br>
+		<label> Idade: </br><input id="idade" type="number" name="idade"></input></label></br>
+		<label> Salário: </br><input id="salario" type="number" name="salario"></input></label></br>
+		<button class="post">POST</button>
+	</div>
+	</br>
+	<div>
+		<label><h2>Atualizar Registro: </h2></label>
+		<label>ID:</br><input id="IDat" type="text" name="idget"></input></label></br>
+		<label> Nome: </br><input id="atualizaNome" type="text" name="name"></input></label></br>
+		<label> Idade: </br><input id="atualizaIdade" type="number" name="idade"></input></label></br>
+		<label> Salário: </br><input id="AtualizaSalario" type="number" name="salario"></input></label></br>
+		<button class="put">PUT</button>
+	</div>
+	</br>
+	<div>
+		<label><h2>Deletar ID: </h2></label>
+		<label> ID: </br><input id="deleid" type="text" name="name"></input></label></br>
+		<button type="button" class="deleteid" value="Delete ID"> Delete ID</button>
+	</div>
+</body>
+
+</html>
