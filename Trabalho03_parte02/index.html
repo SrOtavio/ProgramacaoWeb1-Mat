@@ -1,0 +1,57 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="funcao.js"></script>
+</head>
+<style>
+	label, button, input, h2{
+		margin: 5px;
+		width: 200px;
+	}
+	div{
+		border: 1px solid black;
+		margin: 3px;
+		width: 210px;
+		float: auto;
+		background-color: lightblue;
+	}
+	h2{
+		text-align: center;
+	}
+
+</style>
+<body>
+	<div id="corpo">
+		<label><h2>Buscar Produtos: </h2></label>
+		<button class="getall">GET ALL</button>
+	</div>
+		<p id="Result"></p>
+	<div>
+		<label><h2>Buscar produto por ID: </h2></label>
+		<label>ID:</br><input id="idget" type="text" name="idget"></input></label></br>
+		<button type="button" class="get" value="GET">GET</button>
+	</div>
+	</br>
+	<div>
+		<label><h2>Cadastrar Produto: </h2></label>
+		<label> Tipo: </br><input id="tipo" type="text" name="tipo"></input></label></br>
+		<label> Preço: </br><input id="preco" type="number" name="preco"></input></label></br>
+		<button class="post">POST</button>
+	</div>
+	</br>
+	<div>
+		<label><h2>Atualizar produto: </h2></label>
+		<label>ID:</br><input id="IDat" type="text" name="idget"></input></label></br>
+		<label> Tipo: </br><input id="tipo" type="text" name="tipo"></input></label></br>
+		<label> Preço: </br><input id="preco" type="number" name="preco"></input></label></br>
+		<button class="put">PUT</button>
+	</div>
+	</br>
+	<div>
+		<label><h2>Deletar produto por ID: </h2></label>
+		<label> ID: </br><input id="deleid" type="text" name="name"></input></label></br>
+		<button type="button" class="deleteid" value="Delete ID"> Delete ID</button>
+	</div>
+</body>
+
+</html>
